@@ -1,0 +1,78 @@
+### Code Structure
+The project contains a single file named `main.cpp` which includes the main function and definitions for the calculator functions.
+
+### Documentation
+
+#### 1. `main()`
+
+**Description:**
+The `main` function is the entry point of the program. It prompts the user to input two integers and then performs addition, subtraction, and multiplication using the input values.
+
+**Code:**
+```cpp
+int main(){
+    int a, b;
+    cout << "\n\tEnter A : ";
+    cin >> a;
+    cout << "\tEnter B : ";
+    cin >> b;
+    cout << "Addition : " << add(a, b) << "\n";    
+    cout << "Sub : " << sub(a, b) << "\n";    
+    cout << "Mul : " << mult(a, b) << "\n";    
+    return 0;
+}
+```
+
+**Explanation:**
+- Prompts the user to enter two integers `a` and `b`.
+- Calls the `add`, `sub`, and `mult` functions to perform addition, subtraction, and multiplication, respectively.
+- Outputs the results of the calculations.
+
+#### 2. `add(int a, int b)`
+
+**Description:**
+The `add` function takes two integers as parameters and returns their sum.
+
+**Code:**
+```cpp
+int add(int a, int b){
+    a = a + b;
+    return a;
+}
+```
+
+**Explanation:**
+- Adds the two integer parameters `a` and `b`.
+- Returns the result.
+
+#### 3. `sub(int a, int b)`
+
+**Description:**
+The `sub` function takes two integers as parameters and returns their difference.
+
+**Code:**
+```cpp
+int sub(int a, int b){
+    return a - b;
+}
+```
+
+**Explanation:**
+- Subtracts the second integer parameter `b` from the first integer parameter `a`.
+- Returns the result.
+
+#### 4. `mult(int a, int b)`
+
+**Description:**
+The `mult` function takes two integers as parameters and returns their product.
+
+**Code:**
+```cpp
+int mult(int a, int b){
+    return a * b;
+}
+```
+
+**Explanation:**
+- Multiplies the two integer parameters `a` and `b`.
+- Returns the result.
